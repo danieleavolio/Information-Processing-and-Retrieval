@@ -6,3 +6,10 @@ nltk
 pandas
 seaborn
 scipy
+umap-learn
+datashader 
+bokeh 
+holoviews 
+scikit-image 
+colorcet
+
