@@ -260,6 +260,7 @@ We then need to use another formula
 
 $$
 s(d) = \frac{b(d)}{a(d)} - 1
+$$
 
 We can have the `silhouette` at cluster level. The silhouette of a cluster is the average of the silhouette of the documents in the cluster.
 
