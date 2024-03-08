@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1709899225 "d:/Lovaion/University/2nd Year/Erasmus/Information Processing and Retrieval/Project/LateX/G08_report.tex" "G08_report.pdf" "G08_report" 1709899227 0
+["pdflatex"] 1709899463 "d:/Lovaion/University/2nd Year/Erasmus/Information Processing and Retrieval/Project/LateX/G08_report.tex" "G08_report.pdf" "G08_report" 1709899465 0
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993058908 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -201,12 +201,12 @@
   "C:/Users/danie/AppData/Roaming/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/danie/AppData/Roaming/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657797096 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/danie/AppData/Roaming/MiKTeX/tex/latex/titlesec/titlesec.sty" 1625494067 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
-  "G08_report.aux" 1709899227 4153 552bfd6e07c267a61675933d81de2f77 "pdflatex"
-  "G08_report.out" 1709899227 4641 6ad5d0ef06361e5b5bb0166dcaf1950e "pdflatex"
+  "G08_report.aux" 1709899465 4153 552bfd6e07c267a61675933d81de2f77 "pdflatex"
+  "G08_report.out" 1709899465 4641 6ad5d0ef06361e5b5bb0166dcaf1950e "pdflatex"
   "G08_report.tex" 1709899224 2910 2c10df888ec0883e43fa10373e431786 ""
   "chapters/1.tex" 1709740345 1688 3575492e45c1548a79fdd2ac2ab8e9c7 ""
   "chapters/2.tex" 1709894688 433 6b2de59bb5457499df4c4ba5b7f4167c ""
-  "chapters/3.tex" 1709899067 5058 03baf64345302f4b77f4668daa690d35 ""
+  "chapters/3.tex" 1709899460 5029 d33ef01a8a2722abd092f51a1f03c3a2 ""
   "d:/Lovaion/University/2nd Year/Erasmus/Information Processing and Retrieval/Project/LateX/G08_report.tex" 1709899224 2910 2c10df888ec0883e43fa10373e431786 ""
   "images/class_comparison.png" 1709894688 36524 50a6954ac0a2b26439c1bfc1502fb11d ""
   "images/dist_D.png" 1709894688 26726 79859f0f3780821ba9a93b2d01dcaaa5 ""
