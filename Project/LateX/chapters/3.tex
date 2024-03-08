@@ -7,31 +7,25 @@ distribution of words remains close to unchanged. The cardinality of terms chang
 note that the y axis has a different scale, due to the smaller cardinality of the summary tokens in respect of the corpus $D$.
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.45\textwidth]{images/dist_D.png}
-    \caption{Corpus distribution}
-    \label{fig:Corpus}
-    \includegraphics*[width=0.45\textwidth]{images/dist_S.png}
-    \caption{Summaries distribution}
-    \label{fig:Summaries}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/dist_D.png}
+        \caption{Corpus distribution}
+        \label{fig:Corpus}
+    \end{subfigure}
+    \begin{subfigure}{0.45\textwidth}
+        \centering
+        \includegraphics[width=\linewidth]{images/dist_S.png}
+        \caption{Summaries distribution}
+        \label{fig:Summaries}
+    \end{subfigure}
+    \label{fig:distributions}
 \end{figure}
 
 \newpage
 \subsection{How does the summarization system perform for the full collection? And within each category? Any intuition for the observed differences?}
 The following graphs show the overall results, both on whole dataset or by class. \\
 We might say that there are differences among classes, but that should be cautious since to prove it we would require a non-parametric statistic test to assert differences on MAP. We can suppose that eventual differences might be result of the different words distribution among categories,with different keywords vocabulary size. 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/whole_collection_performance.png}
-    \caption{Precision and recall for the whole collection.}
-    \label{fig:Performances_whole}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{images/class_comparison.png}
-    \caption{Performances by categories}
-    \label{fig:Performances_cat}
-\end{figure}
 
 \begin{center}
     \begin{table}[H]
@@ -54,7 +48,47 @@ We might say that there are differences among classes, but that should be cautio
     \end{table}
 \end{center}
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/whole_collection_performance.png}
+    \caption{Precision and recall for the whole collection.}
+    \label{fig:Performances_whole}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.75\textwidth]{images/class_comparison.png}
+    \caption{Performances by categories}
+    \label{fig:Performances_cat}
+\end{figure}
+
+
 \subsection{How IR models affect summaries? How vector space models compare with language models?}
+The comparison between BM25 model (that performs similarly to TF-IDF) and BERT model with our algorithm tends to be in favour of this second implementation. 
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|c|c|}
+    \hline
+    Metrica & BM25 & BERT \\
+    \hline
+    Average Precision & 0.25 & 0.30 \\
+    Average Recall & 0.14 & 0.17 \\
+    F1 Score & 0.18 & 0.22 \\
+    Standard Deviation of Precision & 0.06 & 0.17 \\
+    Standard Deviation of Recall & 0.04 & 0.15 \\
+    Mean Average Precision & 0.12 & 0.86 \\
+    \hline
+    \end{tabular}
+    \caption{Performance comparison for BM25 and BERT.}
+    \label{tab:my-table}
+\end{table}
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/bm25_bert.png}
+    \caption{Performance comparison for BM25 and BERT.}
+    \label{fig:bm25_bert}
+\end{figure}
+
 
 \subsection{Is Reciprocal Rank Fusion (RRF) useful to aid decisions?}
 We expected that RRF would help to improve the summaries, since it's a way to
@@ -88,15 +122,19 @@ calculating distances in the latent space, cause a significant slower response.
 \end{center}
 
 \subsection{Considering MMR, how $\lambda$ impacts the accuracy (against ideal extracts) of summaries? Should $\lambda$ be a fixed threshold or depend on the provided topic document (d-specific)?}
-Qua la figura va rivista, le lambda nell'asse x non corrispondono ai valori
-proposti e poi l'asse sembra su un insieme continuo. Ho provato a leggere il
-codice, non capisco che sta facendo
+In this case we have a strange outcome. In fact, the $\lambda$ parameter seems to not affect at all the scores. Our idea is that this is caused by the fact that we could conduct the test only on a small set of documents (20), so the summarization on them might stay unchanged for different $\lambda$s.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images/lambda_metrics.png}
+    \caption{Performances at different $\lambda$}
+    \label{fig:MMR performance}    
+\end{figure}
 \subsection{At the suggested $p$ length threshold, is the system better at promoting recall or precision?}
 We noticed that precision is overall usually higher than recall, due to the fact the system tends to avoid to put non relevant sentences in the summary, leading to a lower recall.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.9\textwidth]{images/pre_rec.png}
+    \includegraphics[width=0.5\textwidth]{images/pre_rec.png}
     \caption{Precision and recall at given threshold}
     \label{fig:Precision and recall}
 \end{figure}
