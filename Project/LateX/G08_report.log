@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.13)  8 MAR 2024 11:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.13)  8 MAR 2024 12:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -628,16 +628,19 @@ File: images/dist_S.png Graphic file (type png)
 <use images/dist_S.png>
 Package pdftex.def Info: images/dist_S.png  used on input line 11.
 (pdftex.def)             Requested size: 155.24895pt x 128.03658pt.
-[3 <./images/dist_D.png> <./images/dist_S.png>]
+[3]
 Overfull \hbox (1.24306pt too wide) in paragraph at lines 15--15
 |[]\OT1/cmr/bx/n/14.4 3.2 How does the sum-ma-riza-tion sys-tem per-form
  []
 
-<images/class_comparison.png, id=90, 596.9502pt x 555.0336pt>
+<images/class_comparison.png, id=86, 596.9502pt x 555.0336pt>
 File: images/class_comparison.png Graphic file (type png)
 <use images/class_comparison.png>
 Package pdftex.def Info: images/class_comparison.png  used on input line 23.
 (pdftex.def)             Requested size: 310.4979pt x 288.69536pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 22.54448pt, for example:
@@ -645,7 +648,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-10.54448pt}.
 
-[4 <./images/class_comparison.png>]
+[4 <./images/dist_D.png> <./images/dist_S.png>]
 Overfull \hbox (6.83464pt too wide) in paragraph at lines 36--36
 \OT1/cmr/bx/n/14.4 racy (against ideal ex-tracts) of sum-maries? Should
  []
@@ -674,6 +677,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 36.
 
+[5 <./images/class_comparison.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 38.
@@ -682,36 +686,36 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 38.
 
-<images/pre_rec.png, id=97, 395.3169pt x 314.3745pt>
+<images/pre_rec.png, id=102, 395.3169pt x 314.3745pt>
 File: images/pre_rec.png Graphic file (type png)
 <use images/pre_rec.png>
 Package pdftex.def Info: images/pre_rec.png  used on input line 44.
 (pdftex.def)             Requested size: 310.4979pt x 246.92363pt.
-) [5]
+)
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 22.54448pt, for example:
-(fancyhdr)                \setlength{\headheight}{22.54448pt}.
+(fancyhdr)                Make it at least 35.10004pt, for example:
+(fancyhdr)                \setlength{\headheight}{35.10004pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-10.54448pt}.
+(fancyhdr)                \addtolength{\topmargin}{-23.10004pt}.
 
 [6 <./images/pre_rec.png>] (./G08_report.aux)
 Package rerunfilecheck Info: File `G08_report.out' has not changed.
 (rerunfilecheck)             Checksum: 6AD5D0EF06361E5B5BB0166DCAF1950E;4641.
  ) 
 Here is how much of TeX's memory you used:
- 31970 strings out of 477985
- 737823 string characters out of 5840058
- 1858388 words of memory out of 5000000
- 51635 multiletter control sequences out of 15000+600000
- 522338 words of font info for 71 fonts, out of 8000000 for 9000
+ 31972 strings out of 477985
+ 737844 string characters out of 5840058
+ 1859388 words of memory out of 5000000
+ 51636 multiletter control sequences out of 15000+600000
+ 522684 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,14n,89p,1126b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on G08_report.pdf (6 pages, 214810 bytes).
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on G08_report.pdf (6 pages, 227326 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 160 PDF objects out of 1000 (max. 8388607)
+ 121 compressed objects within 2 object streams
  24 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 

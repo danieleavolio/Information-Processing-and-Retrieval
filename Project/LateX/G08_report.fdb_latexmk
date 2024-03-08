@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1709898558 "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" "G08_report.pdf" "G08_report" 1709898559 0
+["pdflatex"] 1709901178 "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" "G08_report.pdf" "G08_report" 1709901179 0
   "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" 1709898428 2823 2dc3c768bc049041ffd95cf6fc6830a7 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1704400182 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1704400182 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -25,6 +25,7 @@
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm" 1704400182 1124 6c73e740cf17375f03eec0ee63599741 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1704400182 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1704400182 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/share/texmf-dist/fonts/tfm/public/cm/cmti10.tfm" 1704400182 1480 aa8e34af0eb6a2941b776984cf1dfdc4 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1704400182 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1704400182 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1704400182 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
@@ -33,6 +34,7 @@
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1704400182 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1704400182 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1704400182 32362 179c33bbf43f19adbb3825bb4e36e57a ""
+  "/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1704400182 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "/usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb" 1704400182 138258 6525c253f16cededa14c7fd0da7f67b2 ""
   "/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1704400182 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/share/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1704400182 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -205,11 +207,11 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1704400182 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1707847427 4482925 a1a254cacf5c7108f7b28226c8f3b19f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1707847391 6768054 0ec2c7cb57a377d309fc7493c1afabbb ""
-  "G08_report.aux" 1709898559 3495 0f3c9729b6c6ad81ed2695845d0da51a "pdflatex"
-  "G08_report.out" 1709898559 4641 6ad5d0ef06361e5b5bb0166dcaf1950e "pdflatex"
+  "G08_report.aux" 1709901179 3495 044c581dc22ebe2c1f296df74caf0ed4 "pdflatex"
+  "G08_report.out" 1709901179 4641 6ad5d0ef06361e5b5bb0166dcaf1950e "pdflatex"
   "G08_report.tex" 1709898428 2823 2dc3c768bc049041ffd95cf6fc6830a7 ""
   "chapters/1.tex" 1709814618 1661 3575492e45c1548a79fdd2ac2ab8e9c7 ""
-  "chapters/2.tex" 1709816392 426 6b2de59bb5457499df4c4ba5b7f4167c ""
+  "chapters/2.tex" 1709901178 2084 aa926431119a37d52f89011100b36900 ""
   "chapters/3.tex" 1709898558 3280 4e1ddb81d8dc723a15dbaeb4b163fc87 ""
   "images/class_comparison.png" 1709863579 36524 d23c2fd10c0c36b8cd8267b1cc4911ea ""
   "images/dist_D.png" 1709836345 26726 3441ab4c0a75667b04f6beb79ec89cd1 ""
