@@ -1,0 +1,51 @@
+\section{Proposed questions}
+In this section, we answer point-to-point to the questions proposed during project description.
+
+\subsection{Describe the corpus $D$ and summaries $S$. Are terms uniformly distributed regarding TF-IDF?}
+Fixed the x axis on terms, it can be seen by the figures that the plotted distribution of words remains close to unchanged. However, it is important to note that the y axis has a different scale, due to the smaller cardinality of the summary set. 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.45\textwidth]{images/dist_D.png}
+    \caption{Corpus distribution}
+    \label{fig:Corpus}
+    \includegraphics*[width=0.45\textwidth]{images/dist_S.png}
+    \caption{Summaries distribution}
+    \label{fig:Summaries}
+\end{figure}
+\subsection{How does the summarization system perform for the full collection? And within each category? Any intuition for the observed differences?}
+QUA SI POSSONO VEDERE DEI T TEST
+
+Non mi trovo con il numero di sample. Da controllare
+
+The following graph shows CONCLUSIONI
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/class_comparison.png}
+    \caption{Performances}
+    \label{fig:Performances}
+\end{figure}
+
+
+\subsection{How IR models affect summaries? How vector space models compare with language models?}
+Qua va un attimo contestualizzata la figura
+\subsection{Is Reciprocal Rank Fusion (RRF) useful to aid decisions?}
+We expected that RRF would help to improve the summaries, since it's a way to combine the results of different systems and, in machine learning contexts, ensembles are generally outperforming single models. 
+
+Our test was done on the entire collection due to the scarcity of computational power. Thus, we conduced a test on a subset of the dataset,that shows how the RRF has no particular difference, with the MAP being worse.
+\\ STA COSA NON HA SENSO NON HO CAPITO CHE INTENDI
+Probably our BERT implementation is not the best, so probably this can lead to a worse result since the BERT score is calculated in a way that I'm not sure if it's the best.
+\\FINE COSA NOSENSO
+Moreover, a BERT-based solution is not suggested since the model usage times, combined with the additional overhead caused by calculating distances in the latent space, cause a significant slower response.
+
+\subsection{Considering MMR, how $\lambda$ impacts the accuracy (against ideal extracts) of summaries? Should $\lambda$ be a fixed threshold or depend on the provided topic document (d-specific)?}
+Qua la figura va rivista, le lambda nell'asse x non corrispondono ai valori proposti e poi l'asse sembra su un insieme continuo. Ho provato a leggere il codice, non capisco che sta facendo 
+\subsection{At the suggested $p$ length threshold, is the system better at promoting recall or precision?}
+
+? che stai provando a dire? \\Every time we try to measure the performance of a system, we always see that the precision is the higest, but the recall is the lowest. This is because the system is trying to avoid to put in the summary a sentence that is not relevant, but this can lead to a lower recall.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.9\textwidth]{images/pre_rec.png}
+    \caption{Precision and recall at given threshold}
+    \label{fig:Precision and recall}
+\end{figure}
