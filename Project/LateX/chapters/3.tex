@@ -29,12 +29,8 @@ The following graph shows CONCLUSIONI
 \subsection{How IR models affect summaries? How vector space models compare with language models?}
 Qua va un attimo contestualizzata la figura
 \subsection{Is Reciprocal Rank Fusion (RRF) useful to aid decisions?}
-We expected that RRF would help to improve the summaries, since it's a way to combine the results of different systems and, in machine learning contexts, ensembles are generally outperforming single models. 
-
-Our test was done on the entire collection due to the scarcity of computational power. Thus, we conduced a test on a subset of the dataset,that shows how the RRF has no particular difference, with the MAP being worse.
-\\ STA COSA NON HA SENSO NON HO CAPITO CHE INTENDI
-Probably our BERT implementation is not the best, so probably this can lead to a worse result since the BERT score is calculated in a way that I'm not sure if it's the best.
-\\FINE COSA NOSENSO
+We expected that RRF would help to improve the summaries, since it's a way to combine the results of different systems and, in machine learning contexts, ensembles are generally outperforming single models. \\
+Our test was not done on the entire collection due to the scarcity of computational power. Thus, we conduced a test on a subset of the dataset,that didn't really show any particular improvement on the scoring metrics. Due to this, we can say that RRF did not improve our system, but we cannot say that in general, since the size of our testing dataset was not significative and the BERT implementation is based on our suppositions. 
 Moreover, a BERT-based solution is not suggested since the model usage times, combined with the additional overhead caused by calculating distances in the latent space, cause a significant slower response.
 
 \subsection{Considering MMR, how $\lambda$ impacts the accuracy (against ideal extracts) of summaries? Should $\lambda$ be a fixed threshold or depend on the provided topic document (d-specific)?}

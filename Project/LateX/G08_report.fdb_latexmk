@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1709867072 "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" "G08_report.pdf" "G08_report" 1709867073 0
-  "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" 1709818138 2823 2dc3c768bc049041ffd95cf6fc6830a7 ""
+["pdflatex"] 1709898558 "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" "G08_report.pdf" "G08_report" 1709898559 0
+  "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" 1709898428 2823 2dc3c768bc049041ffd95cf6fc6830a7 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1704400182 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1704400182 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1704400182 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -205,12 +205,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1704400182 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1707847427 4482925 a1a254cacf5c7108f7b28226c8f3b19f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1707847391 6768054 0ec2c7cb57a377d309fc7493c1afabbb ""
-  "G08_report.aux" 1709867073 3495 0f3c9729b6c6ad81ed2695845d0da51a "pdflatex"
-  "G08_report.out" 1709867073 4641 6ad5d0ef06361e5b5bb0166dcaf1950e "pdflatex"
-  "G08_report.tex" 1709818138 2823 2dc3c768bc049041ffd95cf6fc6830a7 ""
+  "G08_report.aux" 1709898559 3495 0f3c9729b6c6ad81ed2695845d0da51a "pdflatex"
+  "G08_report.out" 1709898559 4641 6ad5d0ef06361e5b5bb0166dcaf1950e "pdflatex"
+  "G08_report.tex" 1709898428 2823 2dc3c768bc049041ffd95cf6fc6830a7 ""
   "chapters/1.tex" 1709814618 1661 3575492e45c1548a79fdd2ac2ab8e9c7 ""
   "chapters/2.tex" 1709816392 426 6b2de59bb5457499df4c4ba5b7f4167c ""
-  "chapters/3.tex" 1709867071 3309 2e18073b678f8f92ff2fefb375db7b6b ""
+  "chapters/3.tex" 1709898558 3280 4e1ddb81d8dc723a15dbaeb4b163fc87 ""
   "images/class_comparison.png" 1709863579 36524 d23c2fd10c0c36b8cd8267b1cc4911ea ""
   "images/dist_D.png" 1709836345 26726 3441ab4c0a75667b04f6beb79ec89cd1 ""
   "images/dist_S.png" 1709836362 29423 975fe7eb9b9cca549a63ba5e6615650a ""
