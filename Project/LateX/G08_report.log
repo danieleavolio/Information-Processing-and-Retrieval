@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.13)  8 MAR 2024 12:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2024.2.13)  8 MAR 2024 17:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -541,11 +541,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 95.
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count321
 \l__pdf_internal_box=\box72
-) (./G08_report.aux
-
-LaTeX Warning: Label `fig:Performances' multiply defined.
-
-)
+) (./G08_report.aux)
 \openout1 = `G08_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
@@ -605,108 +601,114 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 117.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapters/1.tex) (./chapters/2.tex [2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]) (./chapters/3.tex [3]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./chapters/1.tex) (./chapters/2.tex [2{/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+) (./chapters/3.tex [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
+(hyperref)                removing `math shift' on input line 4.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 5.
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 4.
 
 <images/dist_D.png, id=81, 617.1858pt x 506.6127pt>
 File: images/dist_D.png Graphic file (type png)
 <use images/dist_D.png>
-Package pdftex.def Info: images/dist_D.png  used on input line 12.
+Package pdftex.def Info: images/dist_D.png  used on input line 10.
 (pdftex.def)             Requested size: 155.24895pt x 127.43361pt.
 <images/dist_S.png, id=83, 614.295pt x 506.6127pt>
 File: images/dist_S.png Graphic file (type png)
 <use images/dist_S.png>
-Package pdftex.def Info: images/dist_S.png  used on input line 15.
+Package pdftex.def Info: images/dist_S.png  used on input line 13.
 (pdftex.def)             Requested size: 155.24895pt x 128.03658pt.
 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[4]
 Overfull \hbox (1.24306pt too wide) in paragraph at lines 19--19
 |[]\OT1/cmr/bx/n/14.4 3.2 How does the sum-ma-riza-tion sys-tem per-form
  []
 
-[4 <./images/dist_D.png> <./images/dist_S.png>]
-<images/whole_collection_performance.png, id=95, 416.2752pt x 328.8285pt>
+<images/whole_collection_performance.png, id=90, 416.2752pt x 328.8285pt>
 File: images/whole_collection_performance.png Graphic file (type png)
 <use images/whole_collection_performance.png>
-Package pdftex.def Info: images/whole_collection_performance.png  used on input line 28.
-(pdftex.def)             Requested size: 241.49895pt x 190.77083pt.
-<images/class_comparison.png, id=96, 596.9502pt x 555.0336pt>
+Package pdftex.def Info: images/whole_collection_performance.png  used on input line 24.
+(pdftex.def)             Requested size: 276.00105pt x 218.03098pt.
+[5 <./images/dist_D.png> <./images/dist_S.png>]
+<images/class_comparison.png, id=100, 596.9502pt x 555.0336pt>
 File: images/class_comparison.png Graphic file (type png)
 <use images/class_comparison.png>
-Package pdftex.def Info: images/class_comparison.png  used on input line 35.
-(pdftex.def)             Requested size: 241.49895pt x 224.54176pt.
- [5 <./images/whole_collection_performance.png>] [6 <./images/class_comparison.png>]
-Overfull \hbox (6.83464pt too wide) in paragraph at lines 94--94
+Package pdftex.def Info: images/class_comparison.png  used on input line 31.
+(pdftex.def)             Requested size: 276.00105pt x 256.62279pt.
+ [6 <./images/whole_collection_performance.png> <./images/class_comparison.png>]
+Overfull \hbox (6.83464pt too wide) in paragraph at lines 90--90
 \OT1/cmr/bx/n/14.4 racy (against ideal ex-tracts) of sum-maries? Should
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\lambda' on input line 90.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 90.
+
+[7]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 94.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 94.
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\lambda' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 98.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 98.
-
-<images/pre_rec.png, id=110, 395.3169pt x 314.3745pt>
+<images/pre_rec.png, id=116, 395.3169pt x 314.3745pt>
 File: images/pre_rec.png Graphic file (type png)
 <use images/pre_rec.png>
-Package pdftex.def Info: images/pre_rec.png  used on input line 104.
+Package pdftex.def Info: images/pre_rec.png  used on input line 99.
 (pdftex.def)             Requested size: 310.4979pt x 246.92363pt.
-) [7] [8 <./images/pre_rec.png>] (./G08_report.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+) [8 <./images/pre_rec.png>] (./G08_report.aux)
 Package rerunfilecheck Info: File `G08_report.out' has not changed.
 (rerunfilecheck)             Checksum: 6AD5D0EF06361E5B5BB0166DCAF1950E;4641.
  ) 
 Here is how much of TeX's memory you used:
- 31990 strings out of 477985
- 738257 string characters out of 5840058
- 1859388 words of memory out of 5000000
- 51648 multiletter control sequences out of 15000+600000
+ 31991 strings out of 477985
+ 738285 string characters out of 5840058
+ 1864388 words of memory out of 5000000
+ 51649 multiletter control sequences out of 15000+600000
  522684 words of font info for 72 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  84i,12n,89p,1126b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on G08_report.pdf (8 pages, 250086 bytes).
+Output written on G08_report.pdf (8 pages, 250503 bytes).
 PDF statistics:
  176 PDF objects out of 1000 (max. 8388607)
  133 compressed objects within 2 object streams

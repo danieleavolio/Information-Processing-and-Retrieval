@@ -5,8 +5,12 @@ Each task of the project presented a set of choices or challenges that we had to
 The indexing phase sticks to the Whoosh library implementation, because it was fast and straightforward. The only notable operation is the title removal in documents.\\
 We did not implement any scorer function by scratch, since the one already present in the library are performing working in our use case.  
 \subsection{Text summarization}
-The general idea was to produce a summarization system based on the \emph{extractive approach}. In particular,the task was fulfilled with 3 different IR systems: BM25 scorer, TF-IDF scorer and a BERT-based system.\\
-BM25 and TF-IDF are two models based on the respective metrics that are querying on the inverted index created in the first step. The score of each sentence is related to the length of it and we prefer the top $k$ scoring sentences. We also have the possibility to get the extracted sentences in the exact order of appearance in the initial document.\\ Our BERT model is based on a sentence selective approach in which we prefer the sentences that are closer to the document in the latent space representation produced by BERT. This might represent a problem in contexts with long documents, since the BERT token windows is limited to 512. However, we accept that possible information loss for evaluation purposes.\\
+The general idea was to produce a summarization system based on the \emph{extractive approach}. In particular,the task was fulfilled with 3 different IR systems: BM25 scorer, TF-IDF scorer and a BERT-based system, with further tests on Reciprocal Rank Fusion and Maximal Marginal Relevance. \\
+\subsubsection*{MB25 and TF-IDF}
+BM25 and TF-IDF are two models based on the respective metrics that are querying on the inverted index created in the first step. The score of each sentence is related to the length of it and we prefer the top $k$ scoring sentences. We also have the possibility to get the extracted sentences in the exact order of appearance in the initial document.
+\subsubsection*{BERT}
+Our BERT model is based on a sentence selective approach in which we prefer the sentences that are closer to the document in the latent space representation produced by BERT. This might represent a problem in contexts with long documents, since the BERT token windows is limited to 512. However, we accept that possible information loss for evaluation purposes.
+\subsubsection*{Reciprocal Rank Fusion and Maximal Marginal Relevance}
 We also explored the RRF and MMR techniques to improve the quality of the summaries. The first one is a way to combine the results of different systems, in our case BM25 and BERT, while the second one is a way to avoid redundancy in the output summaries.\\ Both of them are limited by important computational times, since the first requires the usage of BERT and the second is an iterative process.
 
 \subsection{Keyword extraction}

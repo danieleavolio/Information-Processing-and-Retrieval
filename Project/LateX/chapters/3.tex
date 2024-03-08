@@ -1,12 +1,10 @@
 \section{Proposed questions}
-In this section, we answer point-to-point to the questions proposed during
-project description.
+In this section, we answer point-to-point to the questions proposed during the project description.
 
 \subsection{Describe the corpus $D$ and summaries $S$. Are terms uniformly distributed regarding TF-IDF?}
 Fixed the x axis on terms, it can be seen by the figures that the plotted
-distribution of words remains close to unchanged. However, it is important to
-note that the y axis has a different scale, due to the smaller cardinality of
-the summary set.
+distribution of words remains close to unchanged. The cardinality of terms changes due to the fact that many words are not relevant to the summarization task, so the do not appear on the vocabulary of the summaries $S$. Also, it is important to
+note that the y axis has a different scale, due to the smaller cardinality of the summary tokens in respect of the corpus $D$.
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.45\textwidth]{images/dist_D.png}
@@ -16,25 +14,23 @@ the summary set.
     \caption{Summaries distribution}
     \label{fig:Summaries}
 \end{figure}
+
+\newpage
 \subsection{How does the summarization system perform for the full collection? And within each category? Any intuition for the observed differences?}
-QUA SI POSSONO VEDERE DEI T TEST
-
-Non mi trovo con il numero di sample. Da controllare
-
-The following graph shows CONCLUSIONI
-
+The following graphs show the overall results, both on whole dataset or by class. \\
+We might say that there are differences among classes, but that should be cautious since to prove it we would require a non-parametric statistic test to assert differences on MAP. We can suppose that eventual differences might be result of the different words distribution among categories,with different keywords vocabulary size. 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/whole_collection_performance.png}
-    \caption{Performances}
-    \label{fig:Performances}
+    \includegraphics[width=0.8\textwidth]{images/whole_collection_performance.png}
+    \caption{Precision and recall for the whole collection.}
+    \label{fig:Performances_whole}
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/class_comparison.png}
-    \caption{Performances}
-    \label{fig:Performances}
+    \includegraphics[width=0.8\textwidth]{images/class_comparison.png}
+    \caption{Performances by categories}
+    \label{fig:Performances_cat}
 \end{figure}
 
 \begin{center}
@@ -59,7 +55,7 @@ The following graph shows CONCLUSIONI
 \end{center}
 
 \subsection{How IR models affect summaries? How vector space models compare with language models?}
-Qua va un attimo contestualizzata la figura
+
 \subsection{Is Reciprocal Rank Fusion (RRF) useful to aid decisions?}
 We expected that RRF would help to improve the summaries, since it's a way to
 combine the results of different systems and, in machine learning contexts,
@@ -67,7 +63,7 @@ ensembles are generally outperforming single models. \\ Our test was not done
 on the entire collection due to the scarcity of computational power. Thus, we
 conduced a test on a subset of the dataset,that didn't really show any
 particular improvement on the scoring metrics. Due to this, we can say that RRF
-did not improve our system, but we cannot say that in general, since the size
+did not improve our system, but we cannot say that it is not an useful technique in general, since the size
 of our testing dataset was not significative and the BERT implementation is
 based on our suppositions. Moreover, a BERT-based solution is not suggested
 since the model usage times, combined with the additional overhead caused by
@@ -96,10 +92,9 @@ Qua la figura va rivista, le lambda nell'asse x non corrispondono ai valori
 proposti e poi l'asse sembra su un insieme continuo. Ho provato a leggere il
 codice, non capisco che sta facendo
 \subsection{At the suggested $p$ length threshold, is the system better at promoting recall or precision?}
+We noticed that precision is overall usually higher than recall, due to the fact the system tends to avoid to put non relevant sentences in the summary, leading to a lower recall.
 
-? che stai provando a dire? \\Every time we try to measure the performance of a system, we always see that the precision is the higest, but the recall is the lowest. This is because the system is trying to avoid to put in the summary a sentence that is not relevant, but this can lead to a lower recall.
-
-\begin{figure}
+\begin{figure}[h]
     \centering
     \includegraphics[width=0.9\textwidth]{images/pre_rec.png}
     \caption{Precision and recall at given threshold}

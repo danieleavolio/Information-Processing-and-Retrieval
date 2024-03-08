@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1709902353 "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" "G08_report.pdf" "G08_report" 1709902354 0
+["pdflatex"] 1709918274 "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" "G08_report.pdf" "G08_report" 1709918275 0
   "/home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex" 1709901232 2783 2c10df888ec0883e43fa10373e431786 ""
   "/usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1704400182 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1704400182 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -207,12 +207,12 @@
   "/usr/share/texmf-dist/web2c/texmf.cnf" 1704400182 40684 9b9ec0b4288972636ff6a3b9c4238efc ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1707847427 4482925 a1a254cacf5c7108f7b28226c8f3b19f ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1707847391 6768054 0ec2c7cb57a377d309fc7493c1afabbb ""
-  "G08_report.aux" 1709902354 4153 1301b98703d17d55f32a44e9417372b0 "pdflatex"
-  "G08_report.out" 1709902354 4641 6ad5d0ef06361e5b5bb0166dcaf1950e "pdflatex"
+  "G08_report.aux" 1709918275 4258 c46ad015bbfd1049ebb5ca54079c4ad4 "pdflatex"
+  "G08_report.out" 1709918275 4641 6ad5d0ef06361e5b5bb0166dcaf1950e "pdflatex"
   "G08_report.tex" 1709901232 2783 2c10df888ec0883e43fa10373e431786 ""
   "chapters/1.tex" 1709814618 1661 3575492e45c1548a79fdd2ac2ab8e9c7 ""
-  "chapters/2.tex" 1709902352 2737 ccd818ba6ef757541dec3ec18c94c0bd ""
-  "chapters/3.tex" 1709901232 4923 d33ef01a8a2722abd092f51a1f03c3a2 ""
+  "chapters/2.tex" 1709915731 2937 1e68c87482c9622a662f4a7c992b05bd ""
+  "chapters/3.tex" 1709918274 5349 77e2718bd2a00b4f2fe29b26ed8541c1 ""
   "images/class_comparison.png" 1709863579 36524 d23c2fd10c0c36b8cd8267b1cc4911ea ""
   "images/dist_D.png" 1709836345 26726 3441ab4c0a75667b04f6beb79ec89cd1 ""
   "images/dist_S.png" 1709836362 29423 975fe7eb9b9cca549a63ba5e6615650a ""
