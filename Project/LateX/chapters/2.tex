@@ -10,6 +10,8 @@ BM25 and TF-IDF are two models based on the respective metrics that are querying
 We also explored the RRF and MMR techniques to improve the quality of the summaries. The first one is a way to combine the results of different systems, in our case BM25 and BERT, while the second one is a way to avoid redundancy in the output summaries.\\ Both of them are limited by important computational times, since the first requires the usage of BERT and the second is an iterative process.
 
 \subsection{Keyword extraction}
-We used TF-IDF 
+We used the \emph{nltk} library to tag words based on the context that they provide in the sentence. We then selected a few relevant tags, like nouns and pronouns. Using TF-IDF, we scored each of the selected word to get the $k$ most relevant ones. 
 
 \subsection{Evaluation}
+The used metrics in this phase are precision, recall, F1 score and Mean Average Precision (MAP).
+As required in the project description, we conduced a set of evaluation tests to assert the quality of the system, but the complete collection could not be tested for some specific evaluation tasks due to lack of computational power. More on this can be found in the upcoming section, as well as in the proposed notebook.
