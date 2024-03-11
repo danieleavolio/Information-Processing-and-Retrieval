@@ -1,8 +1,8 @@
-# Project Title
+# Information Processing and Retrieval Project
 
 This is the project repository for Group 8's Information Processing and Retrieval project for the academic year 2023/2024.
 
-## Project Overview
+## Overview
 
 The project focuses on developing an **Information Retrieval (IR) system** for **keyword extraction** and **text summarization** tasks, using the **BBC News Summary dataset**. It is divided into two parts:
 
@@ -34,12 +34,7 @@ pip install -r requirements.txt
 
 ### Executing program
 
-Just open the `ipython` notebook and run the cells in the order they are presented.
-
-
-## Help
-
-Very slow to run, but it works.
+Just open the `ipynb` notebook and run the cells in the order they are presented.
 
 
 ## Authors
