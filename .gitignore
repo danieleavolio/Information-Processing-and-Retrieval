@@ -1,0 +1,16 @@
+# Python
+*.pyc
+__pycache__/
+venv/
+*.egg-info/
+dist/
+build/
+
+# LaTeX
+*.aux
+*.log
+*.synctex.gz
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
