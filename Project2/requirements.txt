@@ -12,4 +12,5 @@ bokeh
 holoviews 
 scikit-image 
 colorcet
+shap
 
