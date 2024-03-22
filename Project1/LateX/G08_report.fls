@@ -1,7 +1,7 @@
-PWD /home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX
+PWD /home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project1/LateX
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project/LateX/G08_report.tex
+INPUT /home/maiku/Documents/University/Information_Retrieval/Information-Processing-and-Retrieval/Project1/LateX/G08_report.tex
 OUTPUT G08_report.log
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texmf-dist/tex/latex/base/article.cls
