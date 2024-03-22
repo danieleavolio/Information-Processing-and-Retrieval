@@ -1,12 +1,16 @@
 \section{Adopted solutions}
 
 \subsection*{Part A: Clustering}
-This part is conducted in an unsupervised approach, with the idea of grouping sentences with clustering algorithms. In particular, we used the \textbf{sklearn} library, with the AgglomerativeClustering class as suggested.\\
-The main paths to explore in this part are:
+This part is conducted in an unsupervised approach, with the idea of grouping
+sentences with clustering algorithms. In particular, we used the
+\textbf{sklearn} library, with the AgglomerativeClustering class as
+suggested.\\ The main paths to explore in this part are:
 \begin{itemize}
-    \item \textbf{Data preprocessing:} we decided to clean the data from stopwords and punctuation, to better represent the sentences without the noise that stopwords might add and to resolve issues that could have been caused by typos. 
-    \item \textbf{Number of clusters and used metrics: } 
-    \item \textbf{Sentences selection: }
+    \item \textbf{Data preprocessing:} we decided to clean the data from stopwords and punctuation, to better represent the sentences without the noise that stopwords might add and to resolve issues that could have been caused by typos.
+    \item \textbf{Number of clusters and used metrics: }  the main challenge here was the correct choice of the \textbf{number of clusters}, because it's a parameter than could have a big impact on the results. Using \textbf{silhouette score } we have solved this problem in a iterative way.
+    \item \textbf{Sentences selection: } the second challenge was to select the sentences that would be used to build the summary. Using \textbf{centroids} of each clusters, we were able to build summaries that had more topics and were more representative of the original text.
 \end{itemize}
 
+\subsubsection*{Data preprocessing}
+Using \textbf{NLTK} library we tried
 \subsection*{Part B: Classification}
