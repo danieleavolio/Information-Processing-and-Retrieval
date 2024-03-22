@@ -1,1 +1,9 @@
-\section{1}
+\section{Problem statement}
+In the same dataset context as Part I of this project, we are now addressing the tasks of clustering and classification with both an unsupervised approach and a supervised one, using summaries that are being provided for each document as reference.\\
+Tasks conducted in this second part are:
+\begin{itemize}
+    \item \textbf{Part A: Clustering;} for each document, the goal is grouping sentences based on their features and similarities. With this done, it is easy to select the most relevant sentences based on some criteria and algorithm that we defined.
+    \item \textbf{Part B: Classification;} given a document, the goal is to split it into sentences and, using a binary classifier, define wether each sentence belongs to a summary or not. 
+\end{itemize}
+This report can not contain all the data and graphs that we produced, so for more complete informations it is strongly suggested to check the comments on the provided notebook. \\
+Some tasks were again very intensive in term of computation, so we decided to not use BERT embedding representations, since it would increase by a lot the time needed to run the code. Thus, our attention was on space representation using TF-IDF.
