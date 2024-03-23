@@ -973,6 +973,17 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT ./images/models_scores.png
+INPUT ./images/models_scores.png
+INPUT images/models_scores.png
+INPUT ./images/models_scores.png
+INPUT ./images/models_scores.png
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr9.tfm
+INPUT ./images/roc_curves.png
+INPUT ./images/roc_curves.png
+INPUT images/roc_curves.png
+INPUT ./images/roc_curves.png
+INPUT ./images/roc_curves.png
 INPUT ./chapters/3.tex
 INPUT chapters/3.tex
 INPUT ./chapters/3.tex
@@ -986,4 +997,5 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb

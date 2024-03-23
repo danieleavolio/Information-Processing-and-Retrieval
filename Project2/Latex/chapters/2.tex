@@ -18,7 +18,7 @@ In this part, we tried to construct a custom metric taking into account Silhouet
 Another relevant problem, once completed the clustering part of the project, was to decide the criteria to pick the sentences to use in the summarization. We decided to use the \textbf{centroid} of each cluster and, based on the distance from it, we pick the required number of sentences. We have done some tests on different criteria, but others ideas that we had were not really convincing on summaries, so we kept the centroid distance as metric.\\ It is important to note that this strategy has a limitation, since with high numbers of sentences picked from each cluster there might be some redundancy in summaries. Nevertheless, with a low number of picked sentences it is leading to convincing results, taking into the summary relevant sentences.
 \subsection*{Part B: Classification}
 In this section the task is to create a binary classifier that has as goal to discern if a sentence should belong to the summary or not. We used models from the \textbf{scikit-learn} library, and in particular the machine learning techniques that we exploded are Random Forest, Gradient Boosting, Gaussian Naive Bayes, K-Neighbors and Multi-layer Perceptron. \\
-Before the training phase, the challenge was to find the best features and the correct shape to represent data and build the models. We ended up with the following structure.\\ 
+Before the training phase, the challenge was to find the best features and the correct shape to represent data and build the models. Since the classifier should classify sentences, each row of our dataset represents one sentence in the original library. We ended up with the following structure.\\ 
 \begin{table}[H]
     \resizebox{\textwidth}{!}{%
     \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
@@ -44,4 +44,23 @@ We then analyzed the features with a correlation matrix, the Shapley value of ea
     \end{tabular}%
     }
     \end{table}
-At this point, we could train our models and evaluate them with the common machine learning evaluation metrics. 
+At this point, we could train our models and evaluate them with the common machine learning evaluation metrics. The one performing better is, in our case, RandomForest.\\More on this can be found in the notebook, as well as in the following chapter.
+
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/models_scores.png}
+      \caption{Models scores comparison}
+      \label{fig:immagine1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.45\textwidth}
+      \centering
+      \includegraphics[width=\textwidth]{images/roc_curves.png}
+      \caption{Models ROC curves comparison}
+      \label{fig:immagine2}
+    \end{subfigure}
+    \caption{Descrizione generale delle immagini}
+    \label{fig:immagini}
+  \end{figure}
