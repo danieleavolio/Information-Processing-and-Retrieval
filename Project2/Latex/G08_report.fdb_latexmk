@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1711212249 "d:/Lovaion/University/2nd Year/Erasmus/Information Processing and Retrieval/Project2/Latex/G08_report.tex" "G08_report.pdf" "G08_report" 1711212251 0
+["pdflatex"] 1711212272 "d:/Lovaion/University/2nd Year/Erasmus/Information Processing and Retrieval/Project2/Latex/G08_report.tex" "G08_report.pdf" "G08_report" 1711212274 0
   "C:/Program Files/MiKTeX/fonts/tfm/jknappen/ec/tcrm1000.tfm" 993058908 1436 c7f957a372ef2fbe93c0982f96625e12 ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Program Files/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -204,11 +204,11 @@
   "C:/Users/danie/AppData/Roaming/MiKTeX/tex/latex/refcount/refcount.sty" 1576433952 9878 9e94e8fa600d95f9c7731bb21dfb67a4 ""
   "C:/Users/danie/AppData/Roaming/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.sty" 1657797096 9714 ba3194bd52c8499b3f1e3eb91d409670 ""
   "C:/Users/danie/AppData/Roaming/MiKTeX/tex/latex/titlesec/titlesec.sty" 1625494067 48833 3b7b4cfab1a3d15596bfd3772a77ab65 ""
-  "G08_report.aux" 1711212251 3163 30caa69b463e242acb30a14e53b5a6db "pdflatex"
-  "G08_report.out" 1711212251 1280 12b9957a8ef236809ae99dc986cb95ff "pdflatex"
+  "G08_report.aux" 1711212274 3163 0a5846ed8d31abad1411c706fee95025 "pdflatex"
+  "G08_report.out" 1711212274 1280 12b9957a8ef236809ae99dc986cb95ff "pdflatex"
   "G08_report.tex" 1709929625 2909 f682dc8f4987f1ad82d4c8f1ce677e78 ""
   "chapters/1.tex" 1711109992 1225 59d4ac1d597f0c218b9c3b088f85bd87 ""
-  "chapters/2.tex" 1711115537 2213 e2cacc8fd98d197a3ad3b34373934fbd ""
+  "chapters/2.tex" 1711212269 4388 7f4af05db9d308b0ac95dc275831e4d9 ""
   "chapters/3.tex" 1711212246 7361 5fab831e828759faa329a1265425a0f5 ""
   "d:/Lovaion/University/2nd Year/Erasmus/Information Processing and Retrieval/Project2/Latex/G08_report.tex" 1709929625 2909 f682dc8f4987f1ad82d4c8f1ce677e78 ""
   "images/keyword_distribution.png" 1711197375 18423 4a0d54f2ea9cb9ab97af65668c1e28c6 ""
