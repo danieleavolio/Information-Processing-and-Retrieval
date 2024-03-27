@@ -165,6 +165,36 @@ To answer the second part of the question, we can say that the \textit{sentence-
 \end{figure}
 
 \subsection{Question 4}
-\textbf{In alternative to the given reference extracts, consider the presence of manual abstractive summaries, can supervised IR be used to explore such feedback? Justify}
+\textbf{In alternative to the given reference extracts, consider the presence of manual abstractive summaries, can supervised IR be used to explore such feedback? Justify.}
+This task might result difficult to be conducted with a machine learning approach, since there is no direct access to a target function for sentences, neither a way to build up a summary from a set of features without human supervision. This second fact makes the only possible approach to summarization being the extractive one. \\
+The task of supervised summarization can not be conduced as we did during the part B of this delivery, since we can not construct a dataset that use sentences as features.\\
+The abstractive approach is a summarization based on the context of the document, trying to reproduce the same concept in a different shape. This ends up in sentences from the text not being in the summary and, thus, the dataset we have created can not be replicated in the exact same shape. 
 
-This question requires a detailed explanation.
+A possible solution to the task with abstractive summaries could be to use the deep learning BERT, a bidirectional encoder based on Transformer architecture that is able to transpose the input text into a latent space, in which similar concepts are close to each other. \\i9
+Exploiting this, our suggestion is to use the BERT model to encode both the summary, that serves as an anchor reference as provided ground truth, and the sentence we want to classify. The resulting embeddings can be used in a classifier or to compute other metrics, like distance ones, and then use those features to select sentences based on a criterion. This will still produce an extractive summary.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.95\textwidth]{images/abstractive.png}
+  \caption{Possible architecture using abstractive summaries}
+  \label{fig:abstractive}
+\end{figure} 
+
+Another approach that can be explored is based on keywords from the summary. This can be divided in two steps: during the first one, we construct a reference set of keywords, extracting them from the whole set of summaries and expanding them with one iteration on a predefined thesaurus, to make sure to have also synonims of relevant words. \\
+In the second phase, a sentence can be classified calculating a score which is the rate of number of keywords from the sentence that are present in the summary-extracted ones (also referred as \textbf{keywords batch} from now on) over the number of keywords in the document that contains the sentence, as it follows.
+
+$$score = \frac{|keywordsFromSentenceInBatch|}{|keywordsInDocument|}$$
+Note that this formula has the number of keywords in the document as denominator to prefer, among the same document, sentences with a higher keywords "density".\\
+Once calculated the score, it is possible to use it to select the sentences that will be part of the summary using a fixed threshold, that can eventually be updated based on a feedback system that collects them from the final user. 
+Here it is presented a pseudo code to better explain the algorithm.
+
+\begin{lstlisting}
+  keywords_batch = get_keywords_from_summaries()
+
+  for sentence in document:
+    score = calculate_score(sentence, document, keywords_batch)
+    if score >= threshold:
+      summary.add(sentence)
+  
+  return summary
+  
+\end{lstlisting}
