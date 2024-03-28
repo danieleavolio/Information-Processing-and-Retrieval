@@ -146,6 +146,8 @@ that we are using may not be the best. However, to \textit{effectively test the 
 using a training set of the same size as the \textit{tech category training set}, but using a mixture between all the categories.
 In this way we could have a better vision of the model's performance in the generalization task. 
 
+The code and the specific result for each category can be found in the \textit{notebook} file.
+
 
 \subsection{Question 3}
 \textbf{Which features appear to be more relevant to the target summarization task? Do sentence- location features aid summarization?}
@@ -170,7 +172,7 @@ This task might result difficult to be conducted with a machine learning approac
 The task of supervised summarization can not be conduced as we did during the part B of this delivery, since we can not construct a dataset that use sentences as features.\\
 The abstractive approach is a summarization based on the context of the document, trying to reproduce the same concept in a different shape. This ends up in sentences from the text not being in the summary and, thus, the dataset we have created can not be replicated in the exact same shape. 
 
-A possible solution to the task with abstractive summaries could be to use the deep learning BERT, a bidirectional encoder based on Transformer architecture that is able to transpose the input text into a latent space, in which similar concepts are close to each other. \\i9
+A possible solution to the task with abstractive summaries could be to use the deep learning BERT, a bidirectional encoder based on Transformer architecture that is able to transpose the input text into a latent space, in which similar concepts are close to each other. \\
 Exploiting this, our suggestion is to use the BERT model to encode both the summary, that serves as an anchor reference as provided ground truth, and the sentence we want to classify. The resulting embeddings can be used in a classifier or to compute other metrics, like distance ones, and then use those features to select sentences based on a criterion. This will still produce an extractive summary.
 \begin{figure}[H]
   \centering
