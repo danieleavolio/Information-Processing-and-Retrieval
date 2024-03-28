@@ -7,9 +7,8 @@
 
 To answer this question we ran the \textbf{clustering based} algorithm using
 the same set of documents used in the \textit{first part of the project}. The
-result shows a pretty big difference between the two approaches.
+result shows a significative difference between the two approaches.
 
-% do a minipage fo r2 figurs
 \begin{figure}[H]
   \centering
   \begin{minipage}{.5\textwidth}
@@ -26,12 +25,11 @@ result shows a pretty big difference between the two approaches.
   \end{minipage}
 \end{figure}
 
-This result doesn't guarantee that the \textbf{clustering based} approach is
+This result is not enough to guarantee that the \textbf{clustering based} approach is
 worse than the approach using TFIDF and BM25, because this is based on our
 personal implementation of the algorithm. However, it is clear that the
 clustering approach is not as effective as the first approach in this case. A
-possible way to improve the algorithm could be to consider other sentences
-choices rather than focusing on the distance from the centroid of each cluster.
+possible way to improve the algorithm could be to consider other selection criteria rather than focusing on the distance from the centroid of each cluster.
 
 \subsection{Question 2}
 \textbf{How sentence representations, clustering choices, and rank criteria impact summarization?}
@@ -54,8 +52,7 @@ metrics:
   \end{tabular}
 \end{table}
 
-We didn't include any \textbf{different representations} because we only used
-the \textbf{TFIDF} representation. The result are indicating a very low
+We didn't include any \textbf{different representations} because we only used \textbf{TFIDF}. The result are indicating a very low
 performance of the algorithm using a specific set of metrics.
 
 \begin{table}[H]
@@ -65,7 +62,7 @@ performance of the algorithm using a specific set of metrics.
   \begin{adjustbox}{margin={-1cm 0cm 0cm 0cm}}
     \begin{tabular}{|c|c|c|c|c|c|c|c|}
       \hline
-      \textbf{\#cluters} & \textbf{\#sentences} & \textbf{metric} & \textbf{avg\_prec} & \textbf{avg\_rec} & \textbf{f1} & \textbf{m\_a\_p} \\ \hline
+      \textbf{\#clusters} & \textbf{\#sentences} & \textbf{metric} & \textbf{avg\_prec} & \textbf{avg\_rec} & \textbf{f1} & \textbf{m\_a\_p} \\ \hline
       2                  & 3                    & cosine          & 0.453504           & 0.449012          & 0.451247    & 0.646069         \\ \hline
       2                  & 3                    & euclidean       & 0.453504           & 0.449012          & 0.451247    & 0.646069         \\ \hline
       2                  & 5                    & cosine          & 0.457060           & 0.633170          & 0.530891    & 0.561392         \\ \hline
@@ -82,20 +79,18 @@ performance of the algorithm using a specific set of metrics.
   \end{adjustbox}
 \end{table}
 
-More insight on this can be found in the \textit{notebook} file.
+Since A complete overview on this can be found in the \textit{notebook} file.
 
 \subsection{Question 3}
-\textbf{ Are anchor sentences (capturing multiple topics) included? And less relevant outlier sen- tences excluded? Justify}
-
+\textbf{ Are anchor sentences (capturing multiple topics) included? And less relevant outlier sen- tences excluded? Justify} \\
 Since our algorithm is based on the \textbf{distance from the centroid} of each
 cluster to select the sentences, we are not able to handle the \textbf{anchor
-  sentences} and the \textbf{outlier sentences}. We are not able to give a clear
-answer to this question, but a possible way to handle this could be to consider
+  sentences} and the \textbf{outlier sentences}. Thus, we can not give a clear
+answer to this question, but a possible way to deal with this problem this could be to consider
 the \textbf{distance from the centroid} and the \textbf{distance from the other
-  sentences} inside other clusters. Sentences that are \textbf{more far} from the
+  sentences} inside other clusters. Sentences that are \textbf{farther} from the
 centroid of the cluster could be very \textbf{relevant} and could be considered
-as \textbf{anchor sentences}, since that sentence could be holding information
-between more topics.
+as \textbf{anchor sentences}, since that sentence could be holding cross-cluster informations.
 
 \subsection{Question 4}
 \textbf{Given a set of documents, plot the distribution of the number of keywords per document. Are keywords generally dissimilar? If not, how would you tackle this challenge?}
