@@ -40,12 +40,12 @@ metrics:
   \centering
   \begin{tabular}{|c|c|c|}
     \hline
-    \textbf{Max Clusters} & \textbf{Number of Sentences} & \textbf{Our Metrics} \\
+    \textbf{Max Clusters} & \textbf{Number of Sentences} & \textbf{Our Metrics}  \\
     \hline
-    2                     & 1                            &                      \\
-    3                     & 2                            & cosine               \\
-    4                     & 3                            & euclidean            \\
-    6                     & 4                            &                      \\
+    2                     & 1                            &                       \\
+    3                     & 2                            & Cosine sim. (single)  \\
+    4                     & 3                            & Cosine sim. (complete)\\
+    6                     & 4                            &                       \\
    \hline
   \end{tabular}
 \end{table}
@@ -126,7 +126,7 @@ keywords are more likely to be repeated in the same category.
 \section*{Part B: Supervised IR}
 \subsection{Question 1}
 \textbf{ Does the incorporation of relevance feedback from ideal extracts significantly impact the performance of the IR system? Hypothesize why is that so.}
-Comparing the two best models, respectively the unsupervised model from question 3.2 and the supervised RandomForest model, it seems that the supervised IR is better performing in a perceptible way. 
+Comparing the evaluation of two best models, respectively the unsupervised model from question 3.2 and the supervised RandomForest model, it seems that the supervised IR is better performing in a perceptible way. We can say that even if the actual test sets are different since they have a significant high number of documents and the scores are way too different.
 
 
 \begin{table}[H]
