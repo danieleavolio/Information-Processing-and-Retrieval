@@ -42,13 +42,11 @@ metrics:
     \hline
     \textbf{Max Clusters} & \textbf{Number of Sentences} & \textbf{Our Metrics} \\
     \hline
-    2                     & 3                            &                      \\
-    3                     & 5                            &                      \\
-    4                     & 7                            & cosine               \\
-    6                     & 9                            & euclidean            \\
-    8                     & 11                           &                      \\
-    10                    & 13                           &                      \\
-    \hline
+    2                     & 1                            &                      \\
+    3                     & 2                            & cosine               \\
+    4                     & 3                            & euclidean            \\
+    6                     & 4                            &                      \\
+   \hline
   \end{tabular}
 \end{table}
 
@@ -93,7 +91,7 @@ centroid of the cluster could be very \textbf{relevant} and could be considered
 as \textbf{anchor sentences}, since that sentence could be holding cross-cluster informations.
 
 \subsection{Question 4}
-\textbf{Given a set of documents, plot the distribution of the number of keywords per document. Are keywords generally dissimilar? If not, how would you tackle this challenge?}
+\textbf{Given a set of documents, plot the distribution of the number of keywords per document. Are keywords generally dissimilar? If not, how would you tackle this challenge?} \\
 For this question we decided to use documents from \textbf{500} to \textbf{700} as range.
 The result shows that the distribution of the number of keywords per
 document is not uniform.
@@ -108,7 +106,7 @@ document is not uniform.
   \begin{minipage}{.5\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{images/keyword_distribution_ranks.png}
-    \captionof{figure}{Distribution of the number of keywords per document}
+    \captionof{figure}{Top 10 used keywords}
     \label{fig:question4_2}
   \end{minipage}
 \end{figure}
@@ -116,8 +114,7 @@ document is not uniform.
 The main problem is that the \textbf{keywords} are not \textbf{dissimilar} and
 this could be a problem for the \textbf{clustering algorithm}. In fact, we can
 see that a lot of keywords are repeated in the documents. A possible way to
-tackle this challenge could be to use a \textbf{different representation} of
-the sentences in the space. Moreover, using multiple documents of the same
+tackle this challenge could be to use a different \textbf{keyword extraction} method. Moreover, using multiple documents of the same
 category could help to improve the performance of the algorithm since the
 keywords are more likely to be repeated in the same category.
 
