@@ -40,15 +40,13 @@ metrics:
   \centering
   \begin{tabular}{|c|c|c|}
     \hline
-    \textbf{Max Clusters} & \textbf{Number of Sentences} & \textbf{Our Metrics} \\
+    \textbf{Max Clusters} & \textbf{Number of Sentences} & \textbf{Our Metrics}  \\
     \hline
-    2                     & 3                            &                      \\
-    3                     & 5                            &                      \\
-    4                     & 7                            & cosine               \\
-    6                     & 9                            & euclidean            \\
-    8                     & 11                           &                      \\
-    10                    & 13                           &                      \\
-    \hline
+    2                     & 1                            &                       \\
+    3                     & 2                            & Cosine sim. (single)  \\
+    4                     & 3                            & Cosine sim. (complete)\\
+    6                     & 4                            &                       \\
+   \hline
   \end{tabular}
 \end{table}
 
@@ -56,31 +54,36 @@ We didn't include any \textbf{different representations} because we only used \t
 performance of the algorithm using a specific set of metrics.
 
 \begin{table}[H]
+
+  \begin{adjustwidth}{-0.5in}{-.5in}  
   \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|} 
+  \hline 
+  clusters & num\_sent & metric & avg\_prec & avg\_rec & f1 & std\_prec & std\_rec & m\_a\_p \\
+  \hline 
+  2 & 1 & single & 0.403860 & 0.153016 & 0.221942 & 0.171560 & 0.099392 & 0.484703 \\
+  \hline 
+  2 & 1 & complete & 0.427703 & 0.162918 & 0.235957 & 0.170426 & 0.096330 & 0.517471 \\
+  \hline 
+  2 & 2 & single & 0.403429 & 0.230112 & 0.293063 & 0.159069 & 0.134892 & 0.686571 \\
+  \hline
+  $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ & $\cdots$ \\
+  \hline 
+  4 & 3 & single & 0.405465 & 0.329316 & 0.363445 & 0.133851 & 0.193184 & 0.666388 \\
+  \hline 
+  4 & 3 & complete & 0.447709 & 0.503877 & 0.474135 & 0.110074 & 0.217150 & 0.632657 \\
+  \hline 
+  4 & 4 & single & 0.413300 & 0.397615 & 0.405306 & 0.119253 & 0.205291 & 0.670563 \\
+  \hline 
+  4 & 4 & complete & 0.448957 & 0.590894 & 0.510239 & 0.095870 & 0.223584 & 0.554584 \\
+  \hline
+  \end{tabular}
   \caption{Results of the clustering algorithm using different metrics}
-  \label{tab:my-table}
-  \begin{adjustbox}{margin={-1cm 0cm 0cm 0cm}}
-    \begin{tabular}{|c|c|c|c|c|c|c|c|}
-      \hline
-      \textbf{\#clusters} & \textbf{\#sentences} & \textbf{metric} & \textbf{avg\_prec} & \textbf{avg\_rec} & \textbf{f1} & \textbf{m\_a\_p} \\ \hline
-      2                  & 3                    & cosine          & 0.453504           & 0.449012          & 0.451247    & 0.646069         \\ \hline
-      2                  & 3                    & euclidean       & 0.453504           & 0.449012          & 0.451247    & 0.646069         \\ \hline
-      2                  & 5                    & cosine          & 0.457060           & 0.633170          & 0.530891    & 0.561392         \\ \hline
-      2                  & 5                    & euclidean       & 0.457060           & 0.633170          & 0.530891    & 0.561392         \\ \hline
-      2                  & 7                    & cosine          & 0.469898           & 0.768889          & 0.583312    & 0.492352         \\ \hline
-      ...                & ...                  & ...             & ...                & ...               & ...         & ...              \\ \hline
-      10                 & 9                    & euclidean       & 0.484872           & 0.934921          & 0.638568    & 0.418472         \\ \hline
-      10                 & 11                   & cosine          & 0.486431           & 0.941682
-                         & 0.641495             & 0.344811                                                                                  \\ \hline
-      10                 & 11                   & euclidean       & 0.486431           & 0.941682          & 0.641495    & 0.344811         \\ \hline
-      10                 & 13                   & cosine          & 0.486635           & 0.943571          & 0.642110    & 0.336604         \\ \hline
-      10                 & 13                   & euclidean       & 0.486635           & 0.943571          & 0.642110    & 0.336604         \\ \hline
-    \end{tabular}
-  \end{adjustbox}
-\end{table}
 
-Since A complete overview on this can be found in the \textit{notebook} file.
+  \end{adjustwidth}
+  \end{table}
 
+  The complete table can be seen on the notebook. However, we can notice that evaluation scores changes a lot in function of these parameters. In particular, the best setup for this subset of documents is obtained at max\_clusters set to 6 and number of sentences per cluster set to 2, with single metric. 
 \subsection{Question 3}
 \textbf{ Are anchor sentences (capturing multiple topics) included? And less relevant outlier sen- tences excluded? Justify} \\
 Since our algorithm is based on the \textbf{distance from the centroid} of each
@@ -93,7 +96,7 @@ centroid of the cluster could be very \textbf{relevant} and could be considered
 as \textbf{anchor sentences}, since that sentence could be holding cross-cluster informations.
 
 \subsection{Question 4}
-\textbf{Given a set of documents, plot the distribution of the number of keywords per document. Are keywords generally dissimilar? If not, how would you tackle this challenge?}
+\textbf{Given a set of documents, plot the distribution of the number of keywords per document. Are keywords generally dissimilar? If not, how would you tackle this challenge?} \\
 For this question we decided to use documents from \textbf{500} to \textbf{700} as range.
 The result shows that the distribution of the number of keywords per
 document is not uniform.
@@ -108,7 +111,7 @@ document is not uniform.
   \begin{minipage}{.5\textwidth}
     \centering
     \includegraphics[width=1\linewidth]{images/keyword_distribution_ranks.png}
-    \captionof{figure}{Distribution of the number of keywords per document}
+    \captionof{figure}{Top 10 used keywords}
     \label{fig:question4_2}
   \end{minipage}
 \end{figure}
@@ -116,19 +119,28 @@ document is not uniform.
 The main problem is that the \textbf{keywords} are not \textbf{dissimilar} and
 this could be a problem for the \textbf{clustering algorithm}. In fact, we can
 see that a lot of keywords are repeated in the documents. A possible way to
-tackle this challenge could be to use a \textbf{different representation} of
-the sentences in the space. Moreover, using multiple documents of the same
+tackle this challenge could be to use a different \textbf{keyword extraction} method. Moreover, using multiple documents of the same
 category could help to improve the performance of the algorithm since the
 keywords are more likely to be repeated in the same category.
 
 \section*{Part B: Supervised IR}
 \subsection{Question 1}
 \textbf{ Does the incorporation of relevance feedback from ideal extracts significantly impact the performance of the IR system? Hypothesize why is that so.}
+Comparing the evaluation of two best models, respectively the unsupervised model from question 3.2 and the supervised RandomForest model, it seems that the supervised IR is better performing in a perceptible way. We can say that even if the actual test sets are different since they have a significant high number of documents and the scores are way too different.
 
-We can say that a \textbf{model} that is trained using the \textbf{relevance
-  feedback} from the \textbf{ideal extracts} could be a nice approach \textbf{only if} the relevance feedback is \textbf{correct}. This is 
-  because the model task is to follow the indications given by the guidance, so if the guidance is wrong, the model will be wrong too. That's 
-  not a rule for this project, but it's a general rule for machine learning models.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lcccc}
+\textbf{Model} & \textbf{Avg Precision} & \textbf{Avg Recall} & \textbf{F1 Score} & \textbf{\#docs} \\
+Clustering & 0.410742 & 0.304867 & 0.349973 & 200 \\
+Random Forest & 0.746500 & 0.790460 & 0.767851 & 443 \\
+\end{tabular}
+\caption{Performance Metrics of unsupervised best model  and supervised best model}
+\label{tab:performance}
+\end{table}
+
+From our experience we carefully can say that overall an approach based on a reference target category is usually better performing than an unsupervised model. This obviously stands assuming the high quality of the reference summaries. 
 
 \subsection{Question 2}
 \textbf{ Are the learned models able to generalize from one category to another? Justify.}
@@ -140,7 +152,6 @@ This result is not bad, but it's not good either. This happens because each cate
 that we are using may not be the best. However, to \textit{effectively test the model}, what we could do is to train another model 
 using a training set of the same size as the \textit{tech category training set}, but using a mixture between all the categories.
 In this way we could have a better vision of the model's performance in the generalization task. 
-
 The code and the specific result for each category can be found in the \textit{notebook} file.
 
 
@@ -148,11 +159,9 @@ The code and the specific result for each category can be found in the \textit{n
 \textbf{Which features appear to be more relevant to the target summarization task? Do sentence- location features aid summarization?}
 
 The most important feature that we found is the score given by the \textit{similarity} between the sentence and the document. To get this 
-insight, we used a library called \textit{SHAP} that helps us to understand the importance of each feature in the model. It uses the concept of 
-\textit{Shapley Values}, a concept from game theory that given a model and a set of features, it assigns to each feature a value that represents
-how much the feature contributes to the model's prediction. 
-
-To answer the second part of the question, we can say that the \textit{sentence-location} feature is a good one, because it the 4th most important.
+insight, we used the \textit{SHAP} library that uses, to highlight the importance of each feature, the concept of 
+\textit{Shapley Values}, a metric from game theory that given is able to assigns to each agent (our feature) a value that represents the contribution to the model's prediction.
+From this analysis, we can say that the \textit{sentence-location} feature contributes to the task, since it is the 4th most important feature in the model.
 
 \begin{figure}[H]
   \centering
